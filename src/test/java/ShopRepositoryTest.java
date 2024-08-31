@@ -8,7 +8,7 @@ class ShopRepositoryTest {
     @Test
     public void shouldAddToArray() {
         Product product1 = new Product(55, "Iphone", 65_000);
-        Product product2 = new Product(56, "Nokia", 1000);
+        Product product2 = new Product(56, "Nokia", 2000);
         Product product3 = new Product(57, "Xiaomi", 30_000);
 
         ShopRepository shop = new ShopRepository();
@@ -23,7 +23,7 @@ class ShopRepositoryTest {
     @Test
     public void addToArrayByIdShouldThrowException() {
         Product product1 = new Product(55, "Iphone", 65_000);
-        Product product2 = new Product(56, "Nokia", 1000);
+        Product product2 = new Product(56, "Nokia", 2000);
         Product product3 = new Product(56, "Xiaomi", 30_000);
 
         ShopRepository shop = new ShopRepository();
@@ -54,7 +54,7 @@ class ShopRepositoryTest {
     @Test
     public void removeByIdShouldThrowException() {
         Product product1 = new Product(55, "Iphone", 65_000);
-        Product product2 = new Product(56, "Nokia", 1000);
+        Product product2 = new Product(56, "Nokia", 2000);
 
         ShopRepository shop = new ShopRepository();
         shop.add(product1);
